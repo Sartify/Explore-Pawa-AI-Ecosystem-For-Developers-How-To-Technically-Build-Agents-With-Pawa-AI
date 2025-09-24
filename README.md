@@ -1,10 +1,9 @@
-Sawa kabisa ✨. Nitakuandikia **README.md** ya kisasa, yenye sections zote muhimu: overview, features, architecture, setup, usage, na future improvements. Hii itakua useful kwa conference na kwa GitHub repo pia.
 
 ---
 
-# 🚌 Travel Assistant Agent
+#  Travel Assistant Agent
 
-## 📌 Overview
+##  Overview
 
 **Travel Assistant Agent** is an AI-powered demo project that showcases how **intelligent agents** can assist users in planning and booking bus tickets.
 Unlike a simple chatbot, this agent can **reason**, **use tools**, and **take actions** such as searching bus schedules, booking seats, and cancelling bookings.
@@ -13,7 +12,7 @@ The project was built as part of a **conference demo** to illustrate the power o
 
 ---
 
-## 🚀 Features
+##  Features
 
 *  **Natural Conversation** – chat with the agent in plain language.
 *  **Bus Search Tool** – find available buses between two cities.
