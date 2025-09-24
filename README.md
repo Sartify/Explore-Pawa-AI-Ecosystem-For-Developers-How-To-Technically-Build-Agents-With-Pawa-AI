@@ -62,13 +62,13 @@ The agent is built around **three core components**:
 
 ---
 
-## ⚙️ Setup
+##  Setup
 
 ### 1. Clone the repository
 
 ```bash
 git clone https://github.com/Sartify/Explore-Pawa-AI-Ecosystem-For-Developers-How-To-Technically-Build-Agents-With-Pawa-AI.git
-cd travel-assistant-agent
+cd Sartify/Explore-Pawa-AI-Ecosystem-For-Developers-How-To-Technically-Build-Agents-With-Pawa-AI
 ```
 
 ### 2. Create a virtual environment
