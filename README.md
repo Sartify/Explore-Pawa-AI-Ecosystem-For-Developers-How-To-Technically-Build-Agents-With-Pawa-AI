@@ -67,7 +67,7 @@ The agent is built around **three core components**:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/travel-assistant-agent.git
+git clone https://github.com/Sartify/Explore-Pawa-AI-Ecosystem-For-Developers-How-To-Technically-Build-Agents-With-Pawa-AI.git
 cd travel-assistant-agent
 ```
 
