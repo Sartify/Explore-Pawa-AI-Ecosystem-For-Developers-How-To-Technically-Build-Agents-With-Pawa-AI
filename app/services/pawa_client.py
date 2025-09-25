@@ -70,8 +70,9 @@ class PawaClient:
                             "properties": {
                                 "bus_id": {"type": "string", "description": "ID of the bus"},
                                 "name": {"type": "string", "description": "Passenger name"},
+                                "phone": {"type": "string", "description": "Contact phone number"},
                             },
-                            "required": ["bus_id", "name"],
+                            "required": ["bus_id", "name", "phone"],
                         },
                     },
                     "type": "function",
@@ -103,7 +104,7 @@ class PawaClient:
         response = requests.post(self.url, json=payload, headers=headers, timeout=30)
         response.raise_for_status()
         resp_json = response.json()
-        print("Pawa Response:", json.dumps(resp_json, indent=2))  # Debug
+        # print("Pawa Response:", json.dumps(resp_json, indent=2))  # Debug
 
         # Extract assistant response
         request_list = resp_json.get("data", {}).get("request", [])
@@ -111,9 +112,9 @@ class PawaClient:
             return {"reply": "No response from AI."}
 
         assistant_message = request_list[0].get("message", {})
-        print("Assistant Message:", json.dumps(assistant_message, indent=2))  # Debug
+        # print("Assistant Message:", json.dumps(assistant_message, indent=2))  # Debug
         tool_calls = assistant_message.get("tool_calls", [])
-        print("Tool Calls:", json.dumps(tool_calls, indent=2))  # Debug
+        # print("Tool Calls:", json.dumps(tool_calls, indent=2))  # Debug
 
         # Handle tool calls
         if tool_calls:
